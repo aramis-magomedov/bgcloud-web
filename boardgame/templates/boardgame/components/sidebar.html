@@ -1,0 +1,118 @@
+<aside class="sidebar" id="sidebar">
+    <!-- Категории -->
+    <div class="sidebar__section">
+        <div class="sidebar__title">
+            📁 Категории
+        </div>
+        <ul class="sidebar-categories" id="sidebarCategories">
+            <li><a href="#" data-category="all">Все игры <span class="category-count" id="allCount">0</span></a></li>
+            <li><a href="#" data-category="стратегии">🎯 Стратегии <span class="category-count"
+                        id="strategiesCount">0</span></a></li>
+            <li><a href="#" data-category="европейские">🏰 Европейские <span class="category-count"
+                        id="europeanCount">0</span></a></li>
+            <li><a href="#" data-category="семейные">👨‍👩‍👧 Семейные <span class="category-count"
+                        id="familyCount">0</span></a></li>
+            <li><a href="#" data-category="кооперативные">🤝 Кооперативные <span class="category-count"
+                        id="coopCount">0</span></a></li>
+            <li><a href="#" data-category="карточные">🃏 Карточные <span class="category-count"
+                        id="cardCount">0</span></a></li>
+        </ul>
+    </div>
+
+    <!-- Фильтр по игрокам -->
+    <div class="sidebar__section">
+        <div class="sidebar__title">
+            👥 Количество игроков
+        </div>
+        <div class="filter-group">
+            <select id="filterPlayers">
+                <option value="all">Любое</option>
+                <option value="1">1 игрок</option>
+                <option value="2">2 игрока</option>
+                <option value="3-4">3-4 игрока</option>
+                <option value="5+">5+ игроков</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Фильтр по времени -->
+    <div class="sidebar__section">
+        <div class="sidebar__title">
+            ⏱️ Время игры
+        </div>
+        <div class="filter-group">
+            <select id="filterTime">
+                <option value="all">Любое</option>
+                <option value="0-30">До 30 мин</option>
+                <option value="30-60">30-60 мин</option>
+                <option value="60-120">1-2 часа</option>
+                <option value="120+">Более 2 часов</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Фильтр по сложности -->
+    <div class="sidebar__section">
+        <div class="sidebar__title">
+            📊 Сложность
+        </div>
+        <div class="filter-group">
+            <select id="filterComplexity">
+                <option value="all">Любая</option>
+                <option value="легкая">Легкая</option>
+                <option value="средняя">Средняя</option>
+                <option value="сложная">Сложная</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Фильтр по рейтингу -->
+    <div class="sidebar__section">
+        <div class="sidebar__title">
+            ⭐ Рейтинг
+        </div>
+        <div class="rating-filter">
+            <label class="rating-option">
+                <input type="radio" name="rating" value="all" checked> Любой
+            </label>
+            <label class="rating-option">
+                <input type="radio" name="rating" value="4.5"> 4.5+
+            </label>
+            <label class="rating-option">
+                <input type="radio" name="rating" value="4.0"> 4.0+
+            </label>
+            <label class="rating-option">
+                <input type="radio" name="rating" value="3.5"> 3.5+
+            </label>
+        </div>
+    </div>
+
+    <!-- Популярные теги -->
+    <div class="sidebar__section">
+        <div class="sidebar__title">
+            🏷️ Популярные теги
+        </div>
+        <div class="tags-cloud" id="tagsCloud"></div>
+    </div>
+
+    <!-- Быстрая навигация -->
+    <div class="sidebar__section">
+        <div class="sidebar__title">
+            🔗 Быстрая навигация
+        </div>
+        <ul class="quick-links">
+            <li><a href="#">🔥 Популярное</a></li>
+            <li><a href="#">🆕 Новинки</a></li>
+            <li><a href="#">🎁 Скоро в продаже</a></li>
+            <li><a href="#">📝 Обзоры</a></li>
+            <li><a href="#">💬 Форум</a></li>
+        </ul>
+    </div>
+
+    <!-- Сброс фильтров -->
+    <div class="sidebar__section">
+        <button id="resetFilters"
+            style="width:100%; padding:10px; background:#f0f0f0; border:none; border-radius:8px; cursor:pointer;">🔄
+            Сбросить все фильтры</button>
+    </div>
+</aside>

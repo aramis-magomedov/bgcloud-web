@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'boardgame/css/style.css' %}">
+    <title></title>
+</head>
+
+<body>
+    {% include './components/header.html' %}
+
+    <!-- ========== ОСНОВНОЙ КОНТЕНТ С САЙДБАРОМ ========== -->
+    <main class="container">
+        <div class="main-layout">
+            <!-- ========== БОКОВОЕ МЕНЮ ========== -->
+            {% include './components/sidebar.html' %}
+
+            <!-- ========== ОСНОВНОЙ КОНТЕНТ ========== -->
+            <div class="content">
+                <!-- Активные фильтры -->
+                <div class="active-filters" id="activeFilters">
+                    <span class="active-filters__label">Активные фильтры:</span>
+                    <span id="filterBadges"></span>
+                </div>
+
+                <!-- Сетка игр -->
+                {% include './components/card.html' %}
+               
+
+                <!-- Пагинация -->
+                <div class="pagination" id="pagination"></div>
+            </div>
+        </div>
+    </main>
+
+    {% include './components/footer.html' %}
+
+</body>
+
+</html>

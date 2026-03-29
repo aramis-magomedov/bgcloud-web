@@ -1,0 +1,93 @@
+@import 'components/header.css';
+@import 'components/sidebar.css';
+@import 'components/footer.css';
+@import 'components/card.css';
+
+
+
+
+/* ========== ГЛОБАЛЬНЫЕ СТИЛИ ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    color: #2c3e50;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ========== ШАПКА ========== */
+
+
+/* ========== ОСНОВНАЯ СЕТКА ========== */
+.main-layout {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+/* ========== САЙДБАР ========== */
+
+
+/* ========== ОСНОВНОЙ КОНТЕНТ ========== */
+.content {
+    flex: 1;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* ========== КАРТОЧКА ИГРЫ ========== */
+
+
+/* ========== ПАГИНАЦИЯ ========== */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0;
+}
+
+.pagination a {
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination a.active {
+    background: #e67e22;
+    color: white;
+    border-color: #e67e22;
+}
+
+/* ========== ПОДВАЛ ========== */
+
+
+/* ========== АДАПТИВНОСТЬ ========== */
+@media (max-width: 900px) {
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+}
+
